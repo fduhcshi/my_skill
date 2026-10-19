@@ -1,10 +1,8 @@
-# My Skills
+# [My Skills](https://fduhcshi.github.io/my_skill/)
 
 **科研与开发的个人 AI Skills。** 把反复使用的工作方式整理成可下载、可阅读、可交给 AI 使用的 Markdown 文件。
 
 从读懂论文、规划复现，到发展研究想法、组织 Python 代码，再到展示成果，这里收录的是我自己使用和持续调整的工作流。
-
-[浏览本地网站](./index.html) · [查看 Skills](#skills) · [安装与使用](#安装与使用)
 
 ## Skills
 
