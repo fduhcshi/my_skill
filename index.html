@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="一些自己用，也想分享给你的 AI Skills。论文阅读、实验复现、研究构思、Python 开发和贴纸风格设计，一份 Markdown，一个好用的工作流。">
+  <meta name="theme-color" content="#fff4dd">
+  <title>My Skills — 把好用的工作流，装进一个 .md</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/skills-data.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#skills">跳到技能目录</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="My Skills 首页">
+      <span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M7 5h14l5 5v17H7z"/><path d="M21 5v6h5M12 16h9M12 21h6"/></svg></span>
+      <span>my skills<span class="brand-dot">.</span></span>
+    </a>
+    <nav aria-label="主导航"><a href="#skills">技能目录</a><a href="#how-to">如何使用</a><a class="nav-readme" href="#readme">README <span aria-hidden="true">↗</span></a></nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="little-star" aria-hidden="true">✳</span> A PERSONAL AI TOOLKIT</div>
+        <h1 id="hero-title">把好用的工作流，<br>装进一个 <span class="md-highlight">.md<svg viewBox="0 0 200 20" aria-hidden="true"><path d="M4 12Q94 1 194 10M20 18Q103 9 178 15"/></svg></span></h1>
+        <p class="hero-description">一些自己用，也想分享给你的 AI Skills。<br>从读懂论文到写好代码，让每一次对话都有章可循。</p>
+        <div class="hero-footnote"><span class="tiny-file" aria-hidden="true">↓</span> 一份 Markdown · 按需取用 · 持续打磨</div>
+      </div>
+      <div class="hero-art" aria-label="从论文阅读、实验复现到研究构思的个人工具箱">
+        <span class="art-label">GOOD WORK STARTS SMALL.</span>
+        <div class="file-sheet">
+          <div class="sheet-heading"><span class="folder-icon" aria-hidden="true">⌑</span> my-skills / <span class="sheet-dots" aria-hidden="true">● ● ●</span></div>
+          <div class="sheet-file"><span>MD</span> paper-reading.md <i aria-hidden="true">↗</i></div>
+          <div class="sheet-file"><span>MD</span> paper-exp-detail.md <i aria-hidden="true">↗</i></div>
+          <div class="sheet-file"><span>MD</span> idea-insight.md <i aria-hidden="true">↗</i></div>
+          <div class="sheet-file"><span>MD</span> python-project-standards.md <i aria-hidden="true">↗</i></div>
+          <div class="sheet-file"><span>MD</span> research-to-markdown.md <i aria-hidden="true">↗</i></div>
+          <div class="sheet-file"><span>MD</span> markdown-to-interactive-html.md <i aria-hidden="true">↗</i></div>
+          <div class="sheet-file"><span>MD</span> sticker-neo-brutalism.md <i aria-hidden="true">↗</i></div>
+          <div class="sheet-bottom"><span class="status-dot" aria-hidden="true"></span> small files, useful workflows.</div>
+        </div>
+        <div class="art-sticker yellow-sticker"><svg viewBox="0 0 30 30" aria-hidden="true"><path d="m7 6 9-2 9 4v17l-9-3-9 3zM16 4v18M3 9v17l9-2"/></svg><span>读懂一点<br><strong>再往前一步。</strong></span></div>
+        <div class="art-sticker pink-sticker"><span aria-hidden="true">✦</span> made for real work</div>
+        <svg class="art-scribble" viewBox="0 0 64 64" aria-hidden="true"><path d="M12 14q35-20 34 12T16 48q-8-8 8-9t26 17M37 53l14 4 1-14"/></svg>
+      </div>
+    </section>
+
+    <section class="catalog wrap" id="skills" aria-labelledby="catalog-title">
+      <div class="section-heading">
+        <div class="eyebrow">THE COLLECTION / 01</div>
+        <div class="catalog-heading-row">
+          <h2 id="catalog-title">挑一件，顺手的工具<span class="title-period">。</span><span class="collection-note">不断扩充中。。。</span></h2>
+          <label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><span class="sr-only">搜索技能名称、用途或标签</span><input id="skill-search" type="search" placeholder="找找你需要的 skill…" autocomplete="off"><kbd aria-hidden="true">/</kbd></label>
+        </div>
+      </div>
+      <p id="result-count" class="sr-only" role="status" aria-live="polite"></p>
+      <div class="skill-grid" id="skill-grid"></div>
+      <div class="empty-state" id="empty-state" hidden><span aria-hidden="true">⌕</span><h3>还没找到这件工具</h3><p>换个关键词试试。</p><button class="button small" id="reset-search">查看全部 Skills</button></div>
+      <noscript><p class="noscript-message">启用 JavaScript 可以搜索与阅读技能。你也可以直接下载：<a href="paper-reading.md" download>论文精读</a>、<a href="paper-exp-detail.md" download>实验复现</a>、<a href="idea-insight.md" download>研究构思</a>、<a href="python-project-standards.md" download>Python 规范</a>、<a href="research-to-markdown.md" download>研究记录整理</a>、<a href="markdown-to-interactive-html.md" download>离线交互展示</a>、<a href="sticker-neo-brutalism.md" download>贴纸风格设计</a>。</p></noscript>
+    </section>
+
+    <section class="how-to wrap" id="how-to" aria-labelledby="how-title">
+      <div class="how-paper">
+        <div class="how-copy"><div class="eyebrow">LESS SETUP, MORE DOING / 02</div><h2 id="how-title">下载，然后交给 AI。</h2><p>选中一个 skill，下载它的 Markdown 文件。<br>把文件发给你使用的 AI，让它协助安装到当前工具。</p>
+          <ol class="install-steps"><li><span>01</span><div><strong>挑选 & 下载</strong><p>每个 skill 都是一份独立的 .md 文件。</p></div></li><li><span>02</span><div><strong>把文件交给 AI</strong><p>告诉它你正在用什么工具，请它协助安装。</p></div></li><li><span>03</span><div><strong>带上你的真实任务</strong><p>安装后，点名使用这个 skill，再附上任务材料。</p></div></li></ol>
+        </div>
+        <div class="prompt-note"><div class="note-top"><span class="pill">复制这段，发给 AI</span><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m18 3 2 9 9 3-9 3-2 10-3-10-10-3 10-3z"/></svg></div><p class="prompt-caption">附上刚下载的 .md 文件，然后说：</p><blockquote id="install-prompt">这是我下载的 skill 文件。请读取内容，帮我安装到当前使用的 AI 工具中，保留原有指令，并告诉我如何调用。如果需要目录或特定文件名，请按当前工具的规范整理。</blockquote><button class="button copy-install" data-copy-install><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V4H4v12h4"/></svg>复制安装提示词</button><p class="install-note">安装方式随工具而异。也可以先在当前对话中，请 AI 按文件内容执行。</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap"><a class="brand footer-brand" href="#">my skills<span class="brand-dot">.</span></a><p>把重复的交代，变成可复用的默契。</p><a href="#readme">项目说明 <span aria-hidden="true">↗</span></a><a href="#">回到顶部 <span aria-hidden="true">↑</span></a></footer>
+
+  <dialog id="skill-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-top"><span id="dialog-label" class="eyebrow"></span><button class="icon-button" id="close-dialog" aria-label="关闭技能详情"><span aria-hidden="true">×</span></button></div>
+    <div class="dialog-heading"><span id="dialog-icon" class="skill-icon" aria-hidden="true"></span><div><h2 id="dialog-title"></h2><p id="dialog-id" class="mono"></p></div></div>
+    <p id="dialog-summary" class="dialog-summary"></p>
+    <div class="dialog-actions"><a id="dialog-download" class="button primary small" download>下载 skill.md <span aria-hidden="true">↓</span></a><button class="button small" id="copy-source">复制完整 Skill</button></div>
+    <div class="reader-tabs" role="tablist" aria-label="阅读视图"><button role="tab" id="overview-tab" aria-controls="overview-panel" aria-selected="true" tabindex="0" data-view="overview">使用指南</button><button role="tab" id="source-tab" aria-controls="source-panel" aria-selected="false" tabindex="-1" data-view="source">阅读完整内容</button></div>
+    <div id="overview-panel" class="reader-panel" role="tabpanel" aria-labelledby="overview-tab" tabindex="0"></div>
+    <div id="source-panel" class="reader-panel markdown-body" role="tabpanel" aria-labelledby="source-tab" tabindex="0" hidden></div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

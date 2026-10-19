@@ -1,0 +1,23 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local dependencies and caches
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Local credentials and environment overrides
+.env
+.env.*
+!.env.example
+
+# Local previews, logs, and temporary output
+.local/
+outputs/
+dist/
+*.log
+*.tmp
+*.swp
