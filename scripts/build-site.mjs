@@ -50,12 +50,12 @@ const catalog = [
   },
   {
     id: 'research-to-markdown', title: '把实验整理成记录', subtitle: 'Research to Markdown',
-    summary: '从代码、配置与运行结果中整理研究证据，留下可追溯的报告和数据入口。',
+    summary: '整理研究证据，以开篇速览突出本次实验与主要结果，保留详细分析和数据入口。',
     tags: ['研究记录', '证据追溯', '数据索引'], color: 'yellow', icon: 'book',
     input: '项目代码、配置、运行日志、结果文件和已有文档。',
-    output: 'Markdown 研究报告、复现说明，以及指向真实文件的数据资产索引。',
+    output: '默认按生成时刻命名的 report_YYYYMMDD_HHMMSS.md，包含本次实验速览、详细分析、复现说明和数据资产索引。',
     use: '需要整理或更新研究记录时；也可将报告与数据索引交给 markdown-to-interactive-html 继续展示。',
-    prompt: '请使用 research-to-markdown，根据这个项目的代码、配置、运行日志与结果整理 report.md。区分已验证结果和待验证解释，注明证据来源，并建立指向真实数据文件的数据资产索引。',
+    prompt: '请使用 research-to-markdown，根据这个项目的代码、配置、运行日志与结果整理研究报告，新建文件默认按生成时刻命名为 report_YYYYMMDD_HHMMSS.md；用户指定文件名优先，更新旧报告沿用原文件名，新建重名则加序号。标题后先写“本次实验速览”，说明本次实验或变化、主要结果、关键限制与判断，再展开详细分析。区分已验证结果和待验证解释，注明证据来源并建立数据资产索引。',
   },
   {
     id: 'markdown-to-interactive-html', title: '让研究结果可探索', subtitle: 'Markdown to Interactive HTML',
